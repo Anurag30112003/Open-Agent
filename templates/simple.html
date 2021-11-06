@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}Companion{% endblock %} {% block content
+    %}
+
+
+    <h1>Simple</h1>
+    <form method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="enter name">
+        <button type="submit">Submit</button>
+    </form>
+    {% autoescape false %}
+    {{data}}
+    {% endautoescape %}
+    
+{% endblock %}
