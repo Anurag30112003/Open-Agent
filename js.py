@@ -1,8 +1,10 @@
 import os
 import openai
+from os import getenv
 
-openai.api_key = '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'
+api_key = getenv('API_KEY')
 
+openai.api_key = api_key
 
 x = input("")
 if "python" in x:

@@ -1,8 +1,11 @@
 import os
 import openai
 import json
+from os import getenv
 
-openai.api_key = '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'
+api_key = getenv('API_KEY')
+
+openai.api_key = api_key
 s = input()
 n =f'What are some key points I should know when studying about {s} ?\n\n1.'
 response = openai.Completion.create(
