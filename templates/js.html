@@ -2,14 +2,16 @@
     %}
 
 <body>
-    <h1>js</h1>
+    <h1>Agent Code</h1>
+    <h4>Agent that can generate code for you from a text.</h4>
     <form method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="enter name">
-        <button type="submit">Submit</button>
+        <input type="text" id="name" name="name" placeholder="ENTER TEXT"> <br>
+        <button type="submit" class="submit">Submit</button>
     </form>
     <br>
+    <div class="output1" style="text-transform: none;">
     {% autoescape false %}
-    {{data}}
+    Output - {{data}}
     {% endautoescape %}
     {% endblock %}
+    </div>

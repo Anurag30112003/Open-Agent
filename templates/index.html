@@ -25,14 +25,38 @@
             </h1>
         </div>
         <div class="card1">
-            <img src="{{ url_for('static', filename='img/agent1.png') }}" alt="agent" class="agent1">
+            <img src="{{ url_for('static', filename='img/Notes.svg') }}" alt="agent" class="agent1">
             <h3 class="card-title">
                 Agent Notes
             </h3>
             <p class="card-text">
-                A agent that suggest you key point about a paticular topic.
+                A agent that suggest you key point about a paticular topic. <br>
+                <button class="button1" ><a href="{{ url_for('note') }}">Check Out</a></button>
         </div>
-    </section>
+        <div class="card2">
+            <img src="{{ url_for('static', filename='img/pair.svg') }}" alt="agent" class="agent2">
+            <h3 class="card-title2">
+                Agent Code
+            </h3>
+            <p class="card-text2">
+            Agent that can generate code for you from a text. <br>
+            <button class="button1" ><a href="{{ url_for('js') }}">Check Out</a></button>         
+            </div>
+   
 
+    <div class="card3">
+        <img src="{{ url_for('static', filename='img/Chatbot.svg') }}" alt="agent" class="agent3">
+        <h1 class="card-title3">
+            Agent Decrypt
+        </h1>
+        <p class="card-text3">
+            A agent that can decrypt and summerise a long and complex text into simpler one.
+        </p>
+        <button class="button2" ><a href="{{ url_for('simple') }}">Check Out</a></button>
+    </div>
+</section>
 </body>
+
+<footer class="footer1"> Made with ❤️ <br>
+    by <a href="https://github.com/Anurag30112003/"> anurag </a></footer>
     {% endblock %}  

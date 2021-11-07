@@ -77,7 +77,7 @@
 .im{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     margin-left: 40vw;
 }
 .gun2{
@@ -99,11 +99,13 @@
     padding-top: 40px;
 }
 .card1{
+    text-align: center;
     margin-top: 20vh;
     margin-left: 30px;
     color: #ffffff;
 }
 .card-title{
+    margin-top: 35px;
     font-size: 30px;
     margin-left: 70px;
 }
@@ -112,6 +114,113 @@
     font-size: 15px;
 }
 .agent1{
-    width: 100px;
+    width: 15vw;
     margin-left: 70px;
+}
+
+.card2{
+    text-align: center;
+    margin-top: 40vh;
+    margin-left: 30px;
+    color: #ffffff; 
+}
+.card-text2{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.card-title2{
+    margin-top: 35px;
+    font-size: 30px;
+    margin-left: 70px;
+}
+.agent2{
+    width: 30vw;
+    margin-left: 70px;
+}
+.card3{
+    text-align: center;
+    margin-top: 40vh;
+    margin-left: 30px;
+    color: #ffffff; 
+}
+.card-text3{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.card-title3{
+    margin-top: 35px;
+    font-size: 30px;
+    margin-left: 70px;
+    color: #ffffff;
+}
+.agent3{
+    width: 28vw;
+    margin-left: 70px;
+}
+.button1{
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #ADE8F4;
+    color: #03045E;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+.button2{
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #ADE8F4;
+    color: #03045E;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.footer1{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #023E8A;
+}
+.footer1 a{
+    color: #023E8A;
+}
+form{
+    margin-top: 40px;
+    text-align: center;
+}
+#name{
+    text-align: center;
+    background-color: #48CAE4;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 30px ;
+}
+.submit{
+    background-color: #44e0ff;
+    color: #03045E;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.output1{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #ADE8F4;
+    background-color: #023E8A;
+    margin-right: 100px;
+    padding: 20px 20px;
 }

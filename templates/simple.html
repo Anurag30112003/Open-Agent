@@ -2,14 +2,15 @@
     %}
 
 
-    <h1>Simple</h1>
+    <h1>Agent Decrypt</h1>
+    <h4>A agent that can decrypt and summerise a long and complex text into simpler one.</h4>
     <form method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="enter name">
-        <button type="submit">Submit</button>
+        <input type="text" id="name" name="name" placeholder="ENTER PARAGRAPH"> <br>
+        <button type="submit" class="submit">Submit</button>
     </form>
-    {% autoescape false %}
-    {{data}}
+    <div class="output1" > {% autoescape false %}
+    OUTPUT - {{data}}
     {% endautoescape %}
+    </div>
     
 {% endblock %}

@@ -2,17 +2,17 @@
     %}
    <body>
        
-    <h1>Notes script</h1>
+    <h1>Agent note</h1>
+    <h4> A agent that suggest you key point about a paticular topic.</h4>
     <form method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="enter name">
-        <button type="submit">Submit</button>
+        <!-- <label for="name">Name</label> -->
+        <input type="text" id="name" name="name" placeholder="ENTER THE TOPIC"> <br>
+        <button type="submit" class="submit">Submit</button>
     </form>
     </body>
     <br>
-    <div class="footertxt">
-        Made with ❤️ <br>
-        by <a href="https://github.com/Anurag30112003/"> anurag </a>
+    <div class="output1">
+        Output - {{data}}
     </div>
-    {{data}}
+    
 {% endblock %}

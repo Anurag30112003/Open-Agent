@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo">Open Agent</div>
+        <div class="logo"><a href="{{ url_for('index') }}">Open Agent</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->
@@ -22,9 +22,9 @@
           <!-- NAVIGATION MENUS -->
           <div class="menu">
             <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('note') }}">Note</a></li>
-            <li><a href="{{ url_for('js') }}">Text-Code</a></li>
-            <li><a href="{{ url_for('simple') }}">Summerise</a></li>
+            <li><a href="{{ url_for('note') }}">Agent-Note</a></li>
+            <li><a href="{{ url_for('js') }}">Agent-Code</a></li>
+            <li><a href="{{ url_for('simple') }}">Agent-Decrypt</a></li>
           </div>
         </ul>
       </nav>
