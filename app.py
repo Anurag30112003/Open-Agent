@@ -99,6 +99,42 @@ def simple():
 
   return render_template('simple.html',data = data)
 
+@app.route('/grammer',methods = ['GET','POST'])
+def grammer():
+  if request.method == 'POST':
+    data = request.form['name']
+    response = openai.Completion.create(
+    engine="davinci",
+    prompt="Original:" + data ,
+    temperature=0,
+    max_tokens=60,
+    top_p=1.0,
+    frequency_penalty=0.0,
+    presence_penalty=0.0,
+    stop=["\n"]
+)
+    data = response.choices[0]['text']
+    return render_template('grammer.html',data = data)
+  else:
+    return render_template('grammer.html')
+
+@app.route('/extract',methods = ['GET','POST'])
+def extract():
+  if request.method == 'POST':
+    data = request.form['name']
+    response = openai.Completion.create(
+    engine="davinci-instruct-beta",
+    prompt="Extract the mailing address from this email: " + data,
+    temperature=0,
+    max_tokens=64,
+    top_p=1.0,
+    frequency_penalty=0.0,
+    presence_penalty=0.0
+)
+    data = response.choices[0]['text']
+    return render_template('extract.html',data = data)
+  else:
+    return render_template('extract.html')
 
 if __name__ == '__main__':
   app.run(debug=True) 

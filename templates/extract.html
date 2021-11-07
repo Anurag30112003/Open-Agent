@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Open Agent{% endblock %} {% block content
+    %}
+   <body>
+       
+    <h1>Agent Extract</h1>
+    <h4> A agent that can extract contact details from a text.</h4>
+    <form method="POST">
+        <!-- <label for="name">Name</label> -->
+        <input type="text" id="name" name="name" placeholder="ENTER THE TEXT"> <br>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    </body>
+    <br>
+    <div class="output1">
+        Output - {{data}}
+    </div>
+    
+{% endblock %}
