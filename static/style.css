@@ -87,3 +87,31 @@
     transform: rotate(60deg) scaleX(-1);
 
 }
+.f{
+    color:#ADE8F4 ;
+    background-color: #023E8A;
+}
+.fh1{
+    font-size: 40px;
+    color: #ADE8F4;
+    text-align: center;
+    margin-top: 27vh;
+    padding-top: 40px;
+}
+.card1{
+    margin-top: 20vh;
+    margin-left: 30px;
+    color: #ffffff;
+}
+.card-title{
+    font-size: 30px;
+    margin-left: 70px;
+}
+.card-text{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.agent1{
+    width: 100px;
+    margin-left: 70px;
+}
